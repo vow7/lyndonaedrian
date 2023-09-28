@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html style="scroll-behavior: smooth;">
+<head>
+<title>resume</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<style>
+html {
+  animation-duration: 0.3s;
+  animation-name: animate-fade;
+  animation-delay: 0.2s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes animate-fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+body {
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: -1px 1px 0 #000,
+                      1px 1px 0 #000,
+                      1px -1px 0 #000,
+                     -1px -1px 0 #000;
+}
+
+h3,p {
+    color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+para1 {
+    text-align: left;
+    color: white;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 20px;
+}
+
+td, th {
+    color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+nav{
+  background: #003152;    
+  height: 60px;
+  width: 100%;
+  position: fixed
+}
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: #1b9bff;    
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 60px;
+    left: -100%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(17px);
+    --webkit-backdrop-filter: blur(17px);
+    border-right: 1px solid rgba(255, 255, 255, 0.7);
+    text-align: center;
+    transition: all .3s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+* {
+  box-sizing: border-box
+}
+
+.container {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.writing {width: 78%; background-color: #013A63;}
+.microsoft {width: 80%; background-color: #013A63;}
+.web {width: 60%; background-color: #013A63;}
+.editing {width: 75%; background-color: #013A63;}
+
+.btn {
+  background-color: #4682b4;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
+</style>
+<!--<header class="w3-container w3-black w3-padding 100">
+    <p></p>
+</header> -->
+<body class="w3-content" style="max-width:1300px;">
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">My Resume</label>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="ab.html">About</a></li>
+        <li><a class="active" href="res.html">Resume</a></li>
+        <li><a href="contcs.html">Contact</a></li>
+      </ul>
+    </nav>
+</body>
+
+
+<!-- Third Grid: Skill -->
+  <!-- Second Grid: myskill -->
+  <div class="w3-container" style="min-height:1200px" id="skill">
+      <br>
+      <br>
+      <br>
+      <br>
+    <div class="w3-padding-64 w3-center">
+      <h1><b>Educational Background</b></h1>
+
+      <p>A draft from </p>
+      <div class="w3-container w3-responsive">
+        <table class="w3-table">
+          <tr>
+            <th>Year</th>
+            <th>Level</th>
+            <th>School</th>
+          </tr>
+          <tr style="background-color: #003152">
+            <td>2011-2013</td>
+            <td>Primary Education</td>
+            <td>Paitam Elementary School</td>
+          </tr>
+          <tr>
+            <td>2014-2017</td>
+            <td>Secondary Education (Junior)</td>
+            <td>New Taugtog National High School</td>
+          </tr>
+
+          <tr style="background-color: #003152">
+            <td>2017-2019</td>
+            <td>Secondary Education (Senior)</td>
+            <td>Botolan National High School</td>
+          </tr>
+          <tr>
+            <td>2019-2023</td>
+            <td>Bachelor's Degree</td>
+            <td>President Ramon Magsaysay State University</td>
+          </tr>
+        </table>                
+      </div>
+     </div>
+     
+     <div class="w3-padding-64 w3-center">
+      <h1><b>Trainings and Pre-work Experience</b></h1>
+      <div class="w3-container w3-responsive">
+        <table class="w3-table">
+          <tr>
+            <th>Year</th>
+            <th>Duration</th>
+            <th>Position</th>
+            <th>Institution/Event</th>
+          </tr>
+          <tr style="background-color: #003152">
+            <td>December 2018</td>
+            <td>10 Days</td>
+            <td>Pre-School teacher</td>
+            <td>National Child Development Center</td>
+          </tr>
+          <tr>
+            <td>December 2019</td>
+            <td>4 Days</td>
+            <td>Volunteer</td>
+            <td>30th SEA Games<br>Subic, Zambales</td>
+          </tr>
+
+          <tr style="background-color: #003152">
+            <td>January-February 2023</td>
+            <td>54 Hours</td>
+            <td>Field Study</td>
+            <td>Botolan National High School</td>
+          </tr>
+          <tr>
+            <td>February 2023</td>
+            <td>2 Days</td>
+            <td>Chess Facilitator</td>
+            <td>BNHS Chess Intramural and Cluster meet</td>
+          </tr>
+           <tr style="background-color: #003152">
+            <td>March-June 2023</td>
+            <td>500 Hours</td>
+            <td>Teaching Internship</td>
+            <td>Botolan National High School</td>
+          </tr>
+           <tr>
+            <td>July<br> 2023</td>
+            <td>30-45mins</td>
+            <td>Research Presenter</td>
+            <td>PRMSU-CTE 19th In-House Review and Evaluation of Researchers</td>
+          </tr>
+          <tr>
+        </table>                
+      </div>
+     </div>
+    </div>   
+        
+     <div class="w3-padding-64 w3-center">
+      <h1><b>My Hobbies</b></h1>
+      <div class="w3-container w3-responsive">
+          <para1>Chess<br>Photography<br>Poetry<br>Story Making<br>Reading<br>Puzzles<br>Cooking<br>Fitness Exercise</para1>
+      </div>
+            
+     <div class="w3-padding-64 w3-center">
+     <h1><b>Technical Skills</b></h1>
+
+<p>Writing</p>
+<div class="container">
+  <div class="skills writing">78%</div>
+</div>
+
+<p>Microsoft Office</p>
+<div class="container">
+  <div class="skills microsoft">80%</div>
+</div>
+
+<p>Web Developing</p>
+<div class="container">
+  <div class="skills web">60%</div>
+</div>
+
+<p>Photo/Video Editing</p>
+<div class="container">
+  <div class="skills editing">75%</div>
+</div>
+
+</div>
+
+<div class="w3-row">
+  <div class="w3-container w3-center" style="height:500px" id="resume">
+    <div class="w3-padding-64">
+      <h1>Resume</h1></div>
+      <p>You can download my resume here</p>
+      <br>
+      <dl><button class="btn"><i class="fa fa-download"><a href="https://drive.google.com/file/d/1HG9Cxdho_bPzw4vo_Y8zlYO7GfFFd0jn/view?usp=drivesdk"target="_blank"></i> Download</a></button></dl>
+     </div>
+    </div>
+  </div>
+ </div>   
+
+
+<!-- Footer -->
+<footer class="w3-container w3-black w3-padding-10">
+  <p>©2023 Lyndon Aedrian</a></p>
+  <!--<center>Facebook <a href="https://www.facebook.com/AedrianOng.VOW7?mibextid=ZbWKwL" target="_blank">Aedrian<center><!---->
+</footer>
+
+</body>
+</html>
+
+<!--<p><a href="content://com.android.externalstorage.documents/tree/C9A0-1A01%3AGggggggg/document/C9A0-1A01%3AGggggggg%2Fyoutube.html">hajd</a></p> -->
+
+
+<!--  style="text-decoration:none; background-color:#003152; margin: 20px; text-align: center; display: inline-block;border-radius: 8px; text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);padding; 15px 32px;color: white;font-size: 16px;" -->

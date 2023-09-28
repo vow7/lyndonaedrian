@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html style="scroll-behavior: smooth;">
+<head>
+<title>Lyndon Aedrian</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<style>
+html {
+  animation-duration: 0.3s;
+  animation-name: animate-fade;
+  animation-delay: 0.2s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes animate-fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+body {
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: -1px 1px 0 #000,
+                  1px 1px 0 #000,
+                  1px -1px 0 #000,
+                 -1px -1px 0 #000;
+}
+
+p {
+    color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+nav{
+  background: #003152;
+  height: 60px;
+  width: 100%;
+  position: fixed
+}
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: #1b9bff;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+ ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 60px;
+    left: -100%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(17px);
+    --webkit-backdrop-filter: blur(17px);
+    border-right: 1px solid rgba(255, 255, 255, 0.7);
+    text-align: center;
+    transition: all .3s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+</style>
+<!--<header class="w3-container w3-black w3-padding 100">
+    <p></p>
+</header> -->
+
+<body class="w3-content" style="max-width:1300px;">
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Welcome</label>
+      <ul>
+        <li><a class="active" href="home.html">Home</a></li>
+        <li><a href="ab.html">About</a></li>
+        <li><a href="res.html">Resume</a></li>
+        <li><a href="contcs.html">Contact</a></li>
+      </ul>
+    </nav>
+
+
+<!-- First Grid: Logo & About -->
+<div class="w3-row">
+  <div class="w3-container w3-center" style="height:700px" id="home"></style>
+    <div class="w3-padding-64">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      <h1 style="text-align: Center"><b>Welcome</b></h1>
+      <p>Hello, and welcome to my personal corner of the internet! Im Aedrian, and I'm excited to share my story, skills, and experiences with you. This website is a window into my world, Feel free to explore, and don't hesitate to reach out. Let's connect and create something amazing together.
+
+</p>
+    </div>
+  </div>
+
+  
+ 
+<!-- Footer -->
+<footer class="w3-container w3-black w3-padding-10">
+  <p>©2023 Lyndon Aedrian</a></p>
+  <!--<center>Facebook <a href="https://www.facebook.com/AedrianOng.VOW7?mibextid=ZbWKwL" target="_blank">Aedrian<center><!---->
+</footer>
+
+</body>
+</html>

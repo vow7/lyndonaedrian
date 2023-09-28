@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html style="scroll-behavior: smooth;">
+<head>
+<title>about</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<style>
+html {
+  animation-duration: 0.3s;
+  animation-name: animate-fade;
+  animation-delay: 0.2s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes animate-fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: -1px 1px 0 #000,
+                  1px 1px 0 #000,
+                  1px -1px 0 #000,
+                 -1px -1px 0 #000;
+}
+
+p {
+    color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+body {
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+@keyframes animate-fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+nav{
+  background: #003152;
+  height: 60px;
+  width: 100%;
+  position: fixed
+}
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: #1b9bff;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+ ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 60px;
+    left: -100%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(17px);
+    --webkit-backdrop-filter: blur(17px);
+    border-right: 1px solid rgba(255, 255, 255, 0.7);
+    text-align: center;
+    transition: all .3s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+</style>
+<body class="w3-content" style="max-width:1300px;">
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">About Me</label>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a class="active" href="ab.html">About</a></li>
+        <li><a href="res.html">Resume</a></li>
+        <li><a href="contcs.html">Contact</a></li>
+      </ul>
+    </nav>
+</body>
+
+
+<div class=" w3-container" style="height:800px" id="about">
+    <div class="w3-padding-64 w3-center">
+      <h1>My Story</h1>
+      <img src="IMG_20230927_102403.jpg" class="w3-margin w3-circle" alt="Person" style="width: 150px">
+      <div class="w3-center-align w3-padding-large">
+        <p> Hi, my name is Lyndon Aedrian Ong Melendrez, and you can call me Aedrian. I'm 22 years old and from Botolan,Zambales,Philippines. I was born on 22nd of January in the year of snake, 2001.</p>
+        <p>I have a bachelor's degree in Physical Education, and currently reviewing for my licensure exam this upcoming year. </p>
+        <p>When I was a student, life seemed to be a little hard for me. I consider myself a late bloomer because I am a below-average guy, especially in my high school days, I am a short, skinny, and not-so-good-looking guy, I'm also a slow learner, lazy, and a very clumsy teenage boy who only prioritizes fun over important matter. Having at least a B grade is considered a miracle by my parents and that's the reason why I did not bring my parents to school meetings to hide my naughtiness and irresponsible behavior in school. Even some of my teachers were disgusted with my behavior and even told me that I was an idiot. Making friends is also hard for me; maybe because I'm so naughty that is why they did not take me seriously, or maybe because I am poor and don't have cool gadgets like they have and can't relate to their interests. But it changed when I stepped into the College. My maturity graph increased because I always told myself that I needed to take this study more seriously and no one would come to save me during this process. I enrolled myself in the university alone with no friends with me and on that day I learned how to communicate with strangers and ask them when I was confused as to what I needed to do and the rest was history. To this day those strangers I have met at the university admission become my good friends.<br>
+Looking back on my school days made me realize a lot, I also have many regrets because of missed opportunities, and what-ifs. What if I matured early, what if I took my studies seriously, etc.? But one thing is for sure I learned a lot but not enough,  I experienced a lot and more to come, and I am looking forward to sharing them with you through this website.</p>
+
+      </div>
+    </div>
+  </div>
+
+
+  
+<!-- Footer -->
+<footer class="w3-container w3-black w3-padding-10">
+  <p>©2023 Lyndon Aedrian</a></p>
+  <!--<center>Facebook <a href="https://www.facebook.com/AedrianOng.VOW7?mibextid=ZbWKwL" target="_blank">Aedrian<center><!---->
+</footer>
+
+</body>
+</html>
+  

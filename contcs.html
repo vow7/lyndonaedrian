@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>contact</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<style>
+html {
+  scroll-behavior: smooth;
+  animation-duration: 0.3s;
+  animation-name: animate-fade;
+  animation-delay: 0.2s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes animate-fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+body {
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+@keyframes animate-fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: -1px 1px 0 #000,
+                  1px 1px 0 #000,
+                  1px -1px 0 #000,
+                 -1px -1px 0 #000;       
+}
+
+h2 {
+     color: white;
+    font-size: 25px;
+    text-shadow: 2px 2px 4px #000000;
+}
+   
+
+p {
+    color: white;
+  text-shadow: 2px 2px 4px #000000;
+  text-align: center;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+nav{
+  background: #003152;
+  height: 60px;
+  width: 100%;
+  position: fixed
+}
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: #1b9bff;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 60px;
+    left: -100%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(17px);
+    --webkit-backdrop-filter: blur(17px);
+    border-right: 1px solid rgba(255, 255, 255, 0.7);
+    text-align: center;
+    transition: all .3s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+  
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.3;
+}
+.fa-facebook {
+    background: none;
+    color: white;
+}
+.fa-twitter {
+  background: none;
+  color: white;
+}
+.fa-instagram {
+  background: none;
+  color: white;
+}
+</style>
+<!--<header class="w3-container w3-black w3-padding 100">
+    <p></p>
+</header> -->
+<body class="w3-content" style="max-width:1300px;">
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">My Contacts</label>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="ab.html">About</a></li>
+        <li><a href="res.html">Resume</a></li>
+        <li><a class="active" href="contcs.html">Contact</a></li>
+      </ul>
+    </nav>
+</body>
+  
+  <div class=" w3-container w3-center" style="height:700px" id="contact">
+     <div class="w3-padding-64">
+      <h1>Contact Me</h1>
+      <p><b>For some important matter</b></p>
+      <br>
+      
+       <div><p style="color:#4682b4; font-size:30px;" class="fas fa-map-marker-alt"></p><br>
+            <p>Address:</p>
+            <a style="text-decoration: none;color: white;text-shadow: 2px 2px 4px #000000" href="https://www.google.com/search?q=botolan+zambales+map&oq=botolan+zamb&gs_lcrp=EgZjaHJvbWUqCQgBECMYJxiKBTIGCAAQRRg5MgkIARAjGCcYigUyEggCEC4YFBiDARiHAhixAxiABDIHCAMQABiABDIJCAQQABhDGIoFMgcIBRAAGIAEMgcIBhAuGIAEMgcIBxAAGIAEMgcICBAAGIAEMgcICRAAGIAEMgcIChAAGIAEMg0ICxAuGK8BGMcBGIAEMgcIDBAAGIAEMgcIDRAAGIAEMgcIDhAAGIAE0gEIMjcwNmowajSoAgCwAgA&client=ms-android-vivo&sourceid=chrome-mobile&ie=UTF-8">Botolan, Zambales</a>
+            <p>Philippines<p>
+          </div>
+          <br>
+          <br>
+          <div><p style="color:#4682b4; font-size:30px;" class="fas fa-phone-alt"></p>
+            <p>Phone:</p>
+            <a style="text-decoration: none;color: white;text-shadow: 2px 2px 4px #000000" href="tel:09614617211">+639614617211</a>
+          </div>
+          <br>
+          <div><p style="color:#4682b4; font-size:30px;" class="fas fa-envelope"></p>
+            <p>Email:</p>
+            <a style="text-decoration: none;color: white;text-shadow: 2px 2px 4px #000000" href="mailto:Lyndonaedrian@gmail.com">lyndonaedrian@gmail.com</a>
+          </div> 
+    
+      <br>
+      <br>
+      <br>
+      <p style="color:white"><b>Or Dm/follow me on my Social Media Accounts</b></p>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Add font awesome icons -->
+
+<a style="text-decoration:none; padding: 10px; font-size:20px;font-weight: bold;" href="https://www.facebook.com/AedrianOng.VOW7?mibextid=ZbWKwL" class="fa fa-facebook"></a>
+<a style="text-decoration:none; padding: 10px;font-size:20px;font-weight: bold;"href="https://x.com/Aedrianvow7" class="fa fa-twitter"></a>
+<a style="text-decoration:none; padding: 10px;font-size:20px;font-weight: bold;" href="https://instagram.com/aedrian.vow7?igshid=OGQ5ZDc2ODk2ZA==" class="fa fa-instagram"></a>
+    </div>
+  </div>
+  </div>
+
+<!-- Footer -->
+<footer class="w3-container w3-black w3-padding-10">
+  <foot>©2023 Lyndon Aedrian</foot>
+  <!--<center>Facebook <a href="https://www.facebook.com/AedrianOng.VOW7?mibextid=ZbWKwL" target="_blank">Aedrian<center><!---->
+</footer>
+
+</body>
+</html>
+
+<!--<p><a href="content://com.android.externalstorage.documents/tree/C9A0-1A01%3AGggggggg/document/C9A0-1A01%3AGggggggg%2Fyoutube.html">hajd</a></p> -->
+
+  <!--<p>Botolan, Zambales, Philippines</p>
+      <p>+639614617211</p>
+      <a style="text-decoration:none;color: white;text-shadow: 2px 2px 4px #000000" href="mailto:Lyndonaedrian@gmail.com">lyndonaedrian@gmail.com</a> -->
